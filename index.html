@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <link href="assets/css/fontawesome.css" rel="stylesheet" />
+    <link href="assets/css/brands.css" rel="stylesheet" />
+    <link href="assets/css/regular.css" rel="stylesheet" />
+    <link href="assets/css/solid.css" rel="stylesheet" />
+    <title>Document</title>
+  </head>
+  <body>
+    <section id="home">
+      <div class="home-container">
+        <div class="home-content">
+          <h1>Start</h1>
+          <p>
+            Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+            labore et dolore magna aliqua.
+          </p>
+          <button class="btn contact-btn">
+            <span class="btn-icon-container"
+              ><i class="fa-solid fa-phone fa-xl"></i
+            ></span>
+            <span class="btn-text-container" onclick="scrollToElement('contact')">Ta kontakt</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section id="services">
+      <div class="row">
+        <div class="services-container">
+          <div class="service-card">
+            <div class="service-header">
+              <p>Tjänster</p>
+            </div>
+            <div class="service-content">
+              <div class="service-icon">
+                <i class="fa-regular fa-file-code fa-3x icon-gray"></i>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat.
+              </p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-header">
+              <p>Värderingar</p>
+            </div>
+            <div class="service-content">
+              <div class="service-icon">
+                <i class="fa-solid fa-hand-holding-heart fa-3x icon-gray"></i>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                nulla pariatur.
+              </p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-header">
+              <p>Teknik</p>
+            </div>
+            <div class="service-content">
+              <div class="service-icon">
+                <i class="fa-solid fa-ice-cream fa-3x icon-gray"></i>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor
+                in reprehenderit in voluptate velit esse.
+              </p>
+            </div>
+          </div>
+          <div class="service-card">
+            <div class="service-header">
+              <p>Nätverk</p>
+            </div>
+            <div class="service-content">
+              <div class="service-icon">
+                <i class="fa-solid fa-user-group fa-3x icon-gray"></i>
+              </div>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                enim ad minim veniam, quis nostrud exercitation ullamco laboris
+                nisi ut aliquip laborum.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="contact-skewed"></div>
+      <div class="contact-sidebar"></div>
+      <div class="contact-container">
+        <div class="contact-content">
+          <div class="contact-left">
+            <h1>Ta kontakt!</h1>
+            <p>Skriv till oss:</p>
+            <div class="contact-form">
+              <input type="tel" class="input" id="phone" placeholder="Telefonnummer" />
+              <input type="email" class="input" id="email" placeholder="E-mail" />
+              <textarea
+                class="input"
+                name="message"
+                id="message"
+                cols="30"
+                rows="8"
+                placeholder="Meddelande"
+              ></textarea>
+              <p>Lorem ipsum?</p>
+              <div class="contact-options">
+                <input type="checkbox" name="contact-method" id="email-checkbox" checked>
+                <label for="">E-mail</label>
+                <input type="checkbox" name="contact-method" id="phone-checkbox">
+                <label for="">Telefonnummer</label>
+              </div>
+              <button class="btn send-btn" onclick="handleSend()">Skicka</button>
+            </div>
+          </div>
+          <div class="contact-right">
+            <div class="contact-person-box">
+              <div class="contact-person-container">
+                <div class="contact-person-top">
+                  <div class="contact-person-details">
+                    <h1>Namn Efternamn</h1>
+                    <p>Lorem</p>
+                    <p>123 45 6789</p>
+                    <p>namn@foretag.com</p>
+                  </div>
+                  <div class="contact-person-img">
+                    <img src="assets/Icon ionic-md-person.svg" alt="" />
+                  </div>
+                </div>
+                <a href="tel:+123456789">
+                  <div class="contact-person-bottom">
+                    <button class="btn phone-btn">
+                      <span class="btn-icon-container"
+                        ><i class="fa-solid fa-phone fa-2xl"></i
+                      ></span>
+                      <span class="phone-btn-text">+123 45 6789</span>
+                    </button>
+                  </div>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+        <div class="footer-content">
+          <h1>Följ oss på sociala medier</h1>
+          <div class="row footer-icons">
+            <div class="footer-icon">
+              <a href="https://www.instagram.com"
+              ><i class="fa-brands fa-instagram fa-3x icon-white"></i
+              ></a>
+            </div>
+            <div class="footer-icon">
+              <a href="https://www.facebook.com"
+                  ><i class="fa-brands fa-facebook-f fa-3x icon-white"></i
+                ></a>
+            </div>
+          </div>
+            <p class="footer-credit">Web design by Wikström Media</p>
+        </div>
+    </footer>
+    <script>
+      function handleSend() {
+        const phoneNbr = document.getElementById("phone").value;
+        const email = document.getElementById("email").value;
+        const message = document.getElementById("message").value;
+        const emailCheckbox = document.getElementById("email-checkbox");
+        const phoneCheckbox = document.getElementById("phone-checkbox");
+        let checkedOption = "email";
+        if (emailCheckbox.checked)
+          checkedOption = "e-mail"
+        else if (phoneCheckbox.checked)
+          checkedOption = "phone";
+        alert(`Message sent.
+        Phone number: ${phoneNbr}
+        E-mail: ${email}
+        Message: ${message}
+        Contact-option: ${checkedOption}`)
+      }
+      function scrollToElement(section) {
+        const element = document.getElementById(section);
+        element.scrollIntoView()
+      }
+    </script>
+  </body>
+</html>
